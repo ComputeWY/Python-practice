@@ -1,21 +1,24 @@
 def solution(a, b):
-    aString = a.split("")
-    bString = b.split("")
-    
-    isTrue = True
-    
-    if len(aString) != len(bString):
-        isTure = False
-    
+
+    isFalse = False
+
+    if len(a) != len(b):
+        isTure = True
+
     else:
-        for i in range(len(aString)):
-            if aString[i] == bString[i]:
-                isTrue = True
+        for i in range(len(a)):
+            if a[i] == b[i]:
+                isFalse = False
             else:
-                isTrue = False
-    
-    answer = isTrue
-    return answer
+                isFalse = True
+
+    answer = not isFalse
+    print(answer) 
+
+a = "String"
+b = "String"
+
+solution(a,b)
                 
     
                 
